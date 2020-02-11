@@ -2,7 +2,7 @@ aliases:
   - &restore-cache
     keys:
       - dependencies-{{ .Branch }}-{{ checksum "package.json" }}
-      # Fallback in case checksum fails
+      # Fallback in case checksum fails blah bitty
       - dependencies-{{ .Branch }}-
 
   - &save-cache
